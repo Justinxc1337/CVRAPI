@@ -1,0 +1,18 @@
+.main {
+    background-color: rgb(189, 185, 185);
+}
+
+h1 {
+ color: rgb(194, 4, 4);
+ text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.apidata {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+} 
