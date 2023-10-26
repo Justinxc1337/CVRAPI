@@ -1,3 +1,5 @@
+/* Virksomheds CVR test - 61056416 */
+
 function getCompanyInfo() {
   const cvrNumber = document.getElementById('cvrNumber').value;
 
