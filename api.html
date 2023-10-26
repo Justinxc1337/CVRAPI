@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="api.css">
 </head>
 <body class="main">
-    <h1 class="h1"> CVR Register </h1>
-    <h2 class="h2">Indtast cvr-nummer på det ønskede virksomhed</h2>
-
     <div class="apidata">
-            <input type="text" name="cvr" placeholder="CVR-nummer">
-            <button onclick="virknavn">Søg</button>
+        <h1>CVR-opslag</h1>
+        <input type="text" id="cvrNumber" placeholder="Indtast CVR-nummer">
+        <button onclick="getCompanyInfo()">Hent Virksomhed</button>
+        <div id="companyInfo"></div>
     </div>
     <div>
         <h2> </h2>
