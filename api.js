@@ -8,7 +8,8 @@ function getCompanyInfo() {
       return;
   }
 
-  // Foretag et API-opkald til cvrapi.dk
+  // "Fetcher" data fra cvrapi.dk og fremviser det til brugeren.
+  // Flere data kan tilføjes, hvis det ønskes, men er ikke gjort her for at holde det simpelt.
   fetch(`https://cvrapi.dk/api?search=${cvrNumber}&country=dk`)
     .then((response) => response.json())
     .then((data) => {
@@ -34,3 +35,6 @@ function getCompanyInfo() {
       console.error('Fejl ved hentning af data:', error);
   });
 }
+
+// virker medmindre din "quota" er opbrugt af hjemmesiden
+// {"error":"QUOTA_EXCEEDED","message":"Your quota has been exceeded. Reach out if you are certain this is a error. kontakt@cvrapi.dk"}
